@@ -1,0 +1,1 @@
+int loneKnight (char character, int number);
