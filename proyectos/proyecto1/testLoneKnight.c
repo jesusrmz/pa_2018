@@ -13,11 +13,25 @@
 #define KWHT  "\x1B[37m"
 #define RESET "\033[0m"
 
-int main(int argc, char **argv) {
-    if(loneKnight('d',4)==8){
+
+int main() {
+  int myvariable;
+  setbuf(stdout, NULL);     
+  printf("Enter a number of positions:");
+  scanf("%d", &myvariable);
+  for(int i = 0 ; i < myvariable ; i++){
+    char a;
+    int b;
+   //printf("Enter a position:");
+    scanf("%c%d", &a, &b);
+    setbuf(stdout, NULL); 
+    printf("%d", loneKnight(a,b));
+    wait(50);
+  }
+  if(loneKnight('d',4)==8){
     printf("si paso");
-    };
-    return 0;
+  };
+  return 0;
 }
 
 
