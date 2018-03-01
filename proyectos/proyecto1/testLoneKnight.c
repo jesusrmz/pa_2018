@@ -26,7 +26,6 @@ int main() {
     scanf("%c%d", &a, &b);
     setbuf(stdout, NULL); 
     printf("%d", loneKnight(a,b));
-    wait(50);
   }
   if(loneKnight('d',4)==8){
     printf("si paso");
