@@ -1,0 +1,1 @@
+int counterCulture(int number);
